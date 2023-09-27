@@ -1,0 +1,27 @@
+.container
+{
+    background-color: #000814;
+}
+.btncontainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 50px;
+    background-color: #ffd60a;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.contact:hover
+{
+    transform: scale(0.9);
+}

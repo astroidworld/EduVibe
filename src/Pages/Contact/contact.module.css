@@ -1,0 +1,54 @@
+.mainContainer
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000814;
+}
+
+.divcontainer
+{
+    min-height: 700px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;    
+    gap: 50px;
+}
+.sec1
+{
+    border-radius: 30px;
+    background-color: #161d29;
+    width: 600px;
+    height: 390px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sec2
+{
+    border-radius: 30px;
+    
+    width: 700px;
+    min-height: 400px;
+    border: rgb(193, 193, 193) 0.01px solid;    
+}
+
+.h1
+{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.p
+{
+    font-size: 15px;
+    color: rgb(173, 173, 173);
+    font-weight: 600;
+}

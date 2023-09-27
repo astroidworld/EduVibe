@@ -1,0 +1,73 @@
+.page404Container
+{
+    min-height: 500px;
+    padding: 50px 100px 50px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column;
+    gap: 20px; 
+    background-color: #000814;
+}
+
+.card
+{
+    min-height: 300px;
+    width: 800px;
+    background-color: #aff0e4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.h1
+{
+    font-size: 100px;
+    font-weight: 700;
+    color: #28806c;
+}
+
+.imgback {
+  background-image: url(https://media3.giphy.com/media/UoeaPqYrimha6rdTFV/giphy.gif);
+  height: 400px;
+  width: 600px;
+  /* border-radius: 50%; */
+  background-position: center;
+  background-size:cover;
+}
+
+.h2
+{
+    font-size: 35px;
+    font-weight: 600;
+}
+.h3
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn
+{
+    margin-top: 20px;
+    height: 70px;
+    width: 200px;
+    background-color: #28806c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.btn:hover
+{
+    background-color: white;
+    color: #28806c;
+    border: #28806c 3px solid;
+}
+

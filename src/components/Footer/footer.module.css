@@ -1,0 +1,30 @@
+.footer
+{
+    min-height: 510px;
+    width: 100%;    
+    background-color: #161d29;
+    padding: 40px 100px;
+}
+
+.copyrightSec
+{
+    min-height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppersec
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerlogo
+{
+    height: 90px;
+}
