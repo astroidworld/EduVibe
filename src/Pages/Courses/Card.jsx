@@ -23,11 +23,11 @@ const Card = ({ ele,index }) => {
         />
         <div
           className="like-btn rounded-full bg-white h-14 w-14 flex justify-center items-center z-10 absolute -bottom-5 right-3 cursor-pointer transition hover:scale-90"  onClick={()=> {
-            liked?setliked(false):setliked(true);
+            return liked?setliked(false):setliked(true);
             
             }}        
         >
-          <div className={`h-14 w-14 ${liked?"bg-[#00000000]":"bg-[#00000064]"} bg-[#00000094] rounded-full absolute top-0 left-0 `}></div>
+          <div className={`h-14 w-14 ${liked?"bg-[#00000000] hidden":"bg-[#00000064] block"}  rounded-full absolute top-0 left-0 `}></div>
           <FcLike className="h-7 w-7"></FcLike>
         </div>
       </div>
