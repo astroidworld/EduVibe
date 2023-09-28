@@ -12,7 +12,7 @@
 }
 .leftSection
 {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -33,7 +33,7 @@
 
 .rightSection
 {
-    width: 570px;
+   max-width: 570px;
 }
 .btnsec
 {
@@ -65,4 +65,39 @@
 .video
 {
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.video:hover
+{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 8px #ffffff;
+}
+
+@media screen and (max-width:1200px) {
+    .HeroContainer
+    {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .headeing,.para
+    {
+        text-align: center;
+    }
+    .btnsec
+    {
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:700px) {
+
+    .headeing
+    {
+        font-size: 30px;
+    }
+    .para{
+        font-size: 20px;
+    }
 }
