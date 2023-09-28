@@ -2,10 +2,14 @@ import React from 'react'
 import Style from "./herosection.module.css"
 import { Link } from 'react-router-dom'
 import  Banner  from "../../../assets/Images/video.mp4";
+import Fade from 'react-reveal/Fade';
+
+
 
 const Herosection = () => {
   return (
     <div className={Style.HeroContainer}>
+    <Fade bottom>
         <div className={Style.leftSection}>
             <h1 className={Style.headeing}>Ignite Your Learning <span className='bluetext bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB]   text-transparent bg-clip-text font-bold lg:w-[70%]'> Journey with EduVibe</span></h1>
 
@@ -17,7 +21,9 @@ const Herosection = () => {
             </div>
 
         </div>
+    </Fade>
 
+    <Fade bottom>
         <div className={Style.rightSection}>
             <video
             muted
@@ -28,7 +34,11 @@ const Herosection = () => {
             <source  src={Banner} type="video/mp4" className={Style.video}/>
             </video>
         </div>
+        </Fade>
+
+
     </div>
+    
   )
 }
 

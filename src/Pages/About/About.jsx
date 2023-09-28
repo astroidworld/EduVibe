@@ -13,7 +13,7 @@ import Quote from "../../components/core/AboutPage/Quote"
 import StatsComponenet from "../../components/core/AboutPage/Stats"
 import HighlightText from "../../components/core/HomePage/HighlightText"
 import { Link } from "react-router-dom";
-
+import Fade from 'react-reveal/Fade';
 
 
 const About = () => {
@@ -22,6 +22,7 @@ const About = () => {
     <div className={Style.container}>
       <section className="bg-richblack-700">
         <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col justify-between gap-10 text-center text-white">
+        <Fade bottom>
           <header className="mx-auto py-20 text-4xl font-semibold lg:w-[70%]">
           Pioneering Innovation in Online Education for an 
             <HighlightText text={"Empowered Tomorrow"} />
@@ -32,11 +33,13 @@ const About = () => {
               and nurturing a vibrant learning community.
             </p>
           </header>
+          </Fade>
           <div className="sm:h-[70px] lg:h-[150px]"></div>
           <div className="absolute bottom-0 left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[30%] grid-cols-3 gap-3 lg:gap-5">
-            <img src={BannerImage1} alt="" />
-            <img src={BannerImage2} alt="" />
-            <img src={BannerImage3} alt="" />
+          
+            <Fade bottom><img src={BannerImage1} alt="" /></Fade>
+            <Fade bottom><img src={BannerImage2} alt="" /></Fade>
+            <Fade bottom><img src={BannerImage3} alt="" /></Fade>
           </div>
         </div>
       </section>
