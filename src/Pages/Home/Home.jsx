@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './home.module.css';
-import Herosection from './components/Herosection';
+import Herosection from './components/Herosection.jsx';
 
 
 const Home = () => {

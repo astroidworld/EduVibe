@@ -2,7 +2,7 @@ import React from 'react'
 import Style from "./contact.module.css"
 import { BsFillChatLeftQuoteFill,BsGlobeCentralSouthAsia } from 'react-icons/bs'
 import { FcCallback } from 'react-icons/fc'
-import ContactForm from './ContactForm'
+import ContactForm from './ContactForm.jsx'
 
 
 const Contact = () => {
