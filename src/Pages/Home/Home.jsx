@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Style from './home.module.css';
+import Herosection from './components/Herosection';
+
 
 const Home = () => {
   return (
-    <div className='min-h-screen bg-[#000814] flex justify-center items-center flex-col'>
-        <h1 className='text-[150px] text-white font-semibold'>Home Page</h1>
-        <h1 className='text-[150px] text-white font-semibold'>Coming Soon...</h1>
+    <div className={Style.homecontainer}>
+       <Herosection/> 
         
     </div>
   )

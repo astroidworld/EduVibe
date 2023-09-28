@@ -12,6 +12,7 @@ import LearningGrid from "../../components/core/AboutPage/LearningGrid"
 import Quote from "../../components/core/AboutPage/Quote"
 import StatsComponenet from "../../components/core/AboutPage/Stats"
 import HighlightText from "../../components/core/HomePage/HighlightText"
+import { Link } from "react-router-dom";
 
 
 
@@ -108,10 +109,12 @@ const About = () => {
 
       <div className={Style.btncontainer}>
 
-      <button active={true} linkto={"contact"} className={Style.contact}>
+      <Link to="/contact">
+      <button active={true} link={"contact"} className={Style.contact}>
                     Contact Us
-                  </button>
-
+       
+             </button>
+</Link>
       </div>            
 
 

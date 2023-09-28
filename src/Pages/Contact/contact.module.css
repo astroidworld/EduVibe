@@ -16,11 +16,20 @@
     justify-content: center;    
     gap: 50px;
 }
+.leftside
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;    
+    
+}
 .sec1
 {
     border-radius: 30px;
     background-color: #161d29;
-    width: 600px;
+    width: 500px;
     height: 390px;
     padding: 30px;
     display: flex;
@@ -51,4 +60,16 @@
     font-size: 15px;
     color: rgb(173, 173, 173);
     font-weight: 600;
+}
+
+.sec2
+{
+    padding: 50px;
+}
+
+.map
+{
+    height: 420px;
+    border-radius: 20px;
+    width: 500px;
 }

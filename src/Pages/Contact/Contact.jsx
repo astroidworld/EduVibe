@@ -2,12 +2,15 @@ import React from 'react'
 import Style from "./contact.module.css"
 import { BsFillChatLeftQuoteFill,BsGlobeCentralSouthAsia } from 'react-icons/bs'
 import { FcCallback } from 'react-icons/fc'
+import ContactForm from './ContactForm'
 
 
 const Contact = () => {
   return (
     <div className={Style.mainContainer}>
         <div className={Style.divcontainer }>
+
+        <div className={Style.leftside}>
           <div className={Style.sec1}>
 
             <div className="part1">
@@ -34,9 +37,15 @@ const Contact = () => {
 
           </div>
 
-          <div className={Style.sec2}>
 
-          <h1 className={Style.formh1}></h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58940.98248160649!2d88.49280095!3d22.58615595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275350398a5b9%3A0x75e165b244323425!2sNewtown%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1695908779253!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={Style.map}></iframe>
+          
+        </div>
+
+
+          <div className={Style.sec2}>
+          <ContactForm/>
+
 
           </div>
          </div>
