@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from "./form.module.css"
-import Formele from './formele.jsx'
+import Formele from './Formele.jsx'
 
 
 const ContactForm = () => {
