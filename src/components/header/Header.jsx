@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
-import { AiFillHome,AiFillCloseCircle } from "react-icons/ai";
+import { AiFillHome,AiFillCloseCircle,AiOutlineLogin } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsPersonPlusFill} from "react-icons/bs";
 import { auth } from '../../Firebase-config.jsx';
 import Accountdp from "./Accountdp.jsx";
 
@@ -102,10 +103,10 @@ const Header = ({ type }) => {
               !user?
               <div className={Style.btnsec}>
               <NavLink to={"login"} className={Style.loginbtn} onClick={clickHandler}>
-                Login
+              <AiOutlineLogin className={Style.icon}/>Login
               </NavLink>
               <NavLink to={"signup"} className={Style.signupbtn} onClick={clickHandler}>
-                Sign up
+                <BsPersonPlusFill className={Style.icon}/>Sign up
               </NavLink>
             </div>
             :
