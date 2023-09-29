@@ -36,7 +36,7 @@ const Card = ({ ele,index }) => {
       </h1>
       <p className="text-white mt-1 p-3 text-center">{descriptionState?ele.description:`${ele.description.slice(0, 70)} .... `}</p>
       <div className="button-sec w-full text-center mt-2">
-        <button className={`p-9 pt-3 pb-3 text-black  rounded-md text-lg font-medium ${!(index%2)?"bg-yellow-50 text-black":"bg-[#ef476f] text-white"} hover:scale-95 transition`} onClick={readClickHandeler}>
+        <button className={`p-7 pt-3 pb-3 text-black  rounded-md text-lg font-medium ${!(index%2)?"bg-yellow-50 text-black":"bg-[#ef476f] text-white"} hover:scale-95 transition`} onClick={readClickHandeler}>
           
           {descriptionState?"Read Less":"Read More"}
         </button>

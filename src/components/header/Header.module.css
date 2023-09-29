@@ -80,6 +80,12 @@
   justify-content: flex-end;
   gap: 40px;
 }
+.dpsection
+{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .loginbtn,.homebtn {
   height: 42px;

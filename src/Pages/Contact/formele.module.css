@@ -41,3 +41,18 @@
     height: 300px;
     resize: none;
 }
+
+@media screen and (max-width:450px) {
+    .input
+    {
+        font-size: 17px;
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width:400px) {
+    .input
+    {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+}

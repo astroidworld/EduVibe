@@ -16,7 +16,7 @@ const ContactForm = () => {
         <form action="#" className={Style.form}>
             <Formele type="text" lable={"Full Name"} placeholder={"Enter your name..."} id="fullname" isrequired={true}/>
             <Formele type="email" lable={"Email"} placeholder={"Enter your email..."} id="fullname2" isrequired={true}/>
-            <Formele type="textarea" lable={"Email"} placeholder={"Write your message here..."} id="fullname2" isrequired={true}/>
+            <Formele type="textarea" lable={"Message"} placeholder={"Write your message here..."} id="fullname2" isrequired={true}/>
             <button type="submit" className={Style.submitbtn}>Send Us Message</button>
         </form>
     

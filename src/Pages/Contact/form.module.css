@@ -26,3 +26,21 @@
 {
     transform: scale(0.95);
 }
+
+@media screen and (max-width:500px) {
+    .formh1
+    {
+        font-size: 25px;
+    }
+    .submitbtn
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .formh1
+    {
+        font-size: 22px;
+    }
+}

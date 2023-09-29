@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import { AiFillHome,AiFillCloseCircle } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { auth } from '../../Firebase-config.jsx';
+import Accountdp from "./Accountdp.jsx";
 
 const Header = ({ type }) => {
   const [clicked, setclicked] = useState(false)
   const [navStatus, setnavStatus] = useState(Style.navContainer)
+  const [user, setuser] = useState(null);
+ 
 
   const clickHandler = () => {
     if (clicked === false) {
@@ -19,6 +23,22 @@ const Header = ({ type }) => {
       setnavStatus(Style.navContainer)
     }
   }
+
+  useEffect(()=>{
+        
+    auth.onAuthStateChanged((user)=>{
+        if(user)
+        {
+            // setusername(user.displayName)
+            setuser(auth.currentUser);
+        }
+        else
+        setuser(null)
+    })
+
+},user)
+
+
   return (
     <>
       
@@ -78,7 +98,9 @@ const Header = ({ type }) => {
               </NavLink>
             </div>
 
-            <div className={Style.btnsec}>
+            {
+              !user?
+              <div className={Style.btnsec}>
               <NavLink to={"login"} className={Style.loginbtn} onClick={clickHandler}>
                 Login
               </NavLink>
@@ -86,6 +108,14 @@ const Header = ({ type }) => {
                 Sign up
               </NavLink>
             </div>
+            :
+            <div className={Style.dpsection}>
+            <Accountdp user={user} ></Accountdp>
+            </div>
+
+            }
+
+
             
           </div>
 

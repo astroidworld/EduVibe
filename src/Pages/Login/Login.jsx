@@ -5,7 +5,6 @@ import { auth, provider } from "../../Firebase-config.jsx";
 import Style from "./login.module.css";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
-import { toast } from "react-toastify";
 import Loader from "../../components/loader/Loader.jsx";
 
 const Login = () => {
@@ -53,16 +52,6 @@ const Login = () => {
     // console.log(userData);
 
     if (!userData.password || !userData.email) {
-      toast.error("Please fill all fields", {
-        position: "top-center",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
       return;
     }
 
