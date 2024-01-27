@@ -1,8 +1,8 @@
 import React from 'react'
 import Style from "./herosection.module.css"
 import { Link } from 'react-router-dom'
-import  Banner  from "../../../assets/Images/video.mp4";
-
+import Lottie from 'lottie-react';
+import animationData from '../../../components/Lottie Animations/heroimg.json';
 
 
 
@@ -25,14 +25,7 @@ const Herosection = () => {
 
    
         <div className={Style.rightSection}>
-            <video
-            muted
-            loop
-            autoPlay
-            className={Style.video}
-            >
-            <source  src={Banner} type="video/mp4" className={Style.video}/>
-            </video>
+        <Lottie animationData={animationData} className={Style.lottie} />
         </div>
         
 
